@@ -81,7 +81,7 @@
         <label for="article" style="font-size:20px; font-family: 'Georgia'">Write your review here:</label>
         <input type="text" id="article" name="article" required>  
         <label for="link" style="font-size:20px; font-family: 'Georgia'">Add a link to the restaurants homepage! </label>
-        <input type="text" id="link" name="linking" required>
+        <input type="text" id="link" name="link" required>
         <input type='hidden' name = 'token' value = <?php echo $_SESSION['token']?>>
         <input type = "Submit" name="publish" value="publish" id="pub"> 
     </form>
