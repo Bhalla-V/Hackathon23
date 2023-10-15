@@ -1,0 +1,363 @@
+:root{
+    font-size: 5px;
+}
+.fixed_bar{
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    flex-direction: row;
+    gap: 2rem;
+    background-color: white;
+    letter-spacing: .2rem;
+}
+.fixed_bar_logout{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    gap: 2rem;
+    background-color: white;
+    letter-spacing: .2rem;
+    top: 0;
+    left: 0;
+    height: 150px;
+}
+.About_us{
+    border: none;
+    background-color: transparent;
+    font-size: 4rem;
+    font-family: 'Georgia';
+    font-weight: bold;
+    padding-right: 10rem;
+    padding-left: 50rem;
+}
+.Our_mission{
+    border:none;
+    background-color: transparent;
+    font-size: 4rem;
+    font-family:'Georgia';
+    font-weight: bold;
+}
+.main_icon_logout{
+    width: 300px;
+    height: 300px;
+  }
+body{
+    background-image: url(images/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40rem;
+    background-attachment: fixed;
+}
+.header_bar{
+    position: fixed; 
+}
+.main_icon{
+  width: 200px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+.astronaut{
+    position:fixed;
+    height: 600px;
+    bottom: -40px;
+    right: -70px;
+} 
+.astronaut_logout{
+    position: fixed;
+    right:0;
+    bottom:0;
+}
+/* main_site page*/
+.main_content{
+    margin-top: 40rem;
+}
+.intro{
+    font-size: 6rem;
+    font-family: 'Georgia';
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom:5rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+.intro_sub{
+    font-size: 4rem;
+    font-family: 'Georgia';
+    text-align: center;
+    margin-bottom:5rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+.user_input{
+    font-size: 4rem;
+    font-family: 'Georgia';
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+#user, #password{
+    background-color: rgb(255, 255, 255);
+    border:1px;
+}
+#login_id{
+    background-color: rgb(255, 255, 255);
+    border:1px;
+    font-family:'Georgia';
+    font-size: 4rem;
+    font-weight: bold;
+}
+.login{
+    background-color: transparent;
+    font-family: Georgia;
+    font-size: 3rem;
+}
+#reg{
+    background-color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 1px solid white;
+    font-family: 'Georgia';
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top:1rem;
+    margin-left:130rem;
+}
+/*now we start with user_page*/
+.tabs{
+    display: flex;
+    flex-direction: row;
+    top: 50px;
+    gap: 4rem;
+    padding-left: 10rem;
+    align-items: center;
+}
+#homepage{
+    border:none;
+    background-color: transparent;
+    font-family:'Georgia';
+    font-size: 5rem;
+    font-weight: bold;
+
+}
+#posted{
+    border:none;
+    background-color: transparent;
+    font-size: 4rem;
+    font-family:'Georgia';
+    font-weight: bold;
+}
+
+#wishlist{
+    border:none;
+    background-color: transparent;
+    font-size: 4rem;
+    font-family:'Georgia';
+    font-weight: bold;
+}
+#other_wish{
+    border:none;
+    background-color: transparent;
+    font-size: 4rem;
+    font-family:'Georgia';
+    font-weight: bold;
+}
+#view_posts{
+    border:none;
+    background-color: transparent;
+    font-family:'Georgia';
+    font-size: 4rem;
+    font-weight: bold;
+}
+#logging_out{
+    border:none;
+    background-color: transparent;
+    font-family:'Georgia';
+    font-size: 4rem;
+    font-weight: bold;
+    padding-left: 10rem;
+
+}
+.welcome_text{
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Georgia';
+    margin-top: 25rem;
+}
+/* user page is done */
+.restaurant-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.restaurant-row{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 2rem;
+    padding: 3rem;
+    margin-right: 35rem;
+    margin-left: 35rem;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+
+.sort{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 5rem;
+    margin-left: 120rem;
+}
+#sort{
+    border:none;
+    background-color: transparent;
+    font-family:'Georgia';
+    font-size: 4rem;
+    align-items: center;
+}
+.sort_text{
+    border:none;
+    background-color: white;
+    font-family:'Georgia';
+    font-size: 4rem;
+}
+#s{
+    border:1px solid white;
+    background-color: transparent;
+    font-family:'Georgia';
+    font-size: 4rem;
+}
+#wishlist_add{
+    border:1px solid white;
+    font-family:'Georgia';
+    font-size: 4rem;
+}
+.restaurant-list-wishlist{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family:'Georgia';
+    font-size: 4rem;
+    font-weight: bold;
+}
+.restaurant-row-wishlist{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 0.5;
+    padding: 5rem;
+    margin-right: 35rem;
+    margin-left: 35rem;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+.friends{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 25rem;
+    margin-left: 100rem;
+}
+.sort_wishlist{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 30rem;
+    margin-left: 120rem;
+    font-family:Georgia;
+    background-color: transparent;
+}
+#sort_wishlist{
+    border:none;
+    background-color: transparent;
+    font-family:'Georgia';
+    font-size: 4rem;
+    align-items: center;
+}
+#s_wishlist{
+    border:1px solid white;
+    background-color: transparent;
+    font-family:'Georgia';
+    font-size: 4rem;
+}
+.sort_text{
+    border:none;
+    background-color: white;
+    font-family:'Georgia';
+    font-size: 4rem;
+}
+#f{
+    border:1px solid white;
+    background-color: transparent;
+    font-family:'Georgia';
+    font-size: 4rem;
+}
+
+#friends{
+    background-color: transparent;
+    font-family:'Georgia';
+    font-size: 4rem;
+}
+
+.suggestions{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25rem;
+    margin-left: 60rem;
+    margin-right: 60rem;
+    text-align: center;
+}
+
+.restaurant_sugg{
+    border:1px solid white;
+    background-color: transparent;
+    font-family:'Georgia';
+    font-size: 4rem;
+}
+
+.link{
+    border:1px solid white;
+    background-color: transparent;
+    font-family:'Georgia';
+    font-size: 4rem;
+    padding-left: 2rem;
+}
+
+#for_who{
+    background-color: transparent;
+    font-family:'Georgia';
+    font-size: 4rem;
+}
+
+#pub{
+    background-color: transparent;
+    font-family:'Georgia';
+    font-size: 4rem;
+}
+
+.restaurant-list-wishlist{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family:'Georgia';
+    font-size: 4rem;
+    font-weight: bold;
+}
+.restaurant-row-mine{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 3rem;
+    padding: 5rem;
+    margin-right: 35rem;
+    margin-left: 35rem;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+
