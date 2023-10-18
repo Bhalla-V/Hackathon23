@@ -250,7 +250,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items:center;
-    margin-top: 0.5;
+    margin-top: 15rem;
     padding: 5rem;
     margin-right: 35rem;
     margin-left: 35rem;
@@ -264,7 +264,7 @@ body{
     margin-top: 25rem;
     margin-left: 100rem;
 }
-.sort_wishlist{
+/*.sort_wishlist{
     display: flex;
     flex-direction: row;
     gap: 4rem;
@@ -273,6 +273,7 @@ body{
     font-family:Georgia;
     background-color: transparent;
 }
+
 #sort_wishlist{
     border:none;
     background-color: transparent;
@@ -285,7 +286,7 @@ body{
     background-color: transparent;
     font-family:'Georgia';
     font-size: 4rem;
-}
+}*/
 .sort_text{
     border:none;
     background-color: white;
@@ -321,12 +322,12 @@ body{
     font-size: 4rem;
 }
 
-.link{
+.link_sugg{
     border:1px solid white;
     background-color: transparent;
     font-family:'Georgia';
     font-size: 4rem;
-    padding-left: 2rem;
+    padding-left: 5rem;
 }
 
 #for_who{
@@ -335,10 +336,10 @@ body{
     font-size: 4rem;
 }
 
-#pub{
+#publish{
     background-color: transparent;
     font-family:'Georgia';
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .restaurant-list-wishlist{

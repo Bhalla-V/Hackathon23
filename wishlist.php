@@ -64,29 +64,29 @@
     //echo htmlentities("Welcome ".$user_id."! Here are restaurants suggested for you: ");
     ?>
 
-   <div class = "sort_wishlist">
+   <!--<div class = "sort_wishlist">
 
    <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="POST"> 
    <label for="sort_wishlist" style="font-size:20px; font-family: 'Georgia'">Sort by:</label>
-    <select id="sort_wishlist" name="sort">
-        <option value="Restaurant Name" <?php if(isset($_POST['sort']) && $_POST['sort'] == 'Restaurant Name') echo 'selected'; ?>>Restaurant Name</option>
-        <option value="Most recent" <?php if(isset($_POST['sort']) && $_POST['sort'] == 'Most recent') echo 'selected'; ?>>Most recent</option>
-        <!-- Add similar logic for other sorting options if needed -->
+    <select id="sort_wishlist" name="sort_wishlist">
+        <option value="Restaurant Name" id = "restaurant_name"<?php if(isset($_POST['sort_wishlist']) && $_POST['sort_wishlist'] == 'Restaurant Name') echo 'selected'; ?>>Restaurant Name</option>
+        <option value="Most recent" id="most_recent"<?php if(isset($_POST['sort_wishlist']) && $_POST['sort_wishlist'] == 'Most recent') echo 'selected'; ?>>Most recent</option>
+         Add similar logic for other sorting options if needed 
     </select>
     <input type="submit" value="Sort" name="s" id="s_wishlist">
-</form>
-   </div>
+    </form>
+   </div> -->
     <?php
         require 'hackathon_database.php';
-        $sort = $_POST['sort'];
-        $orderClause = 'ORDER BY title ASC';
+       /* $sort = $_POST['sort_wishlist'];
+        
         if ($sort == 'Restaurant Name') {
             $orderClause = 'ORDER BY title ASC';
         } 
         if ($sort == 'Most recent') {
             $orderClause = 'ORDER BY id DESC';
-        } 
-   
+        } */
+        $orderClause = 'ORDER BY title ASC';
         $stmt = $mysqli->prepare("SELECT * FROM `wishlist` WHERE `wisher` = ?");
         $stmt->bind_param('s', $user_id);
         if(!$stmt){

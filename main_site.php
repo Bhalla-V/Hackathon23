@@ -12,10 +12,8 @@
        <div class="fixed_bar_logout"> 
            <img src="images/logo_logout.png" class="main_icon_logout" alt="mainicon">
             <div class="About_us">
-            ABOUT US
             </div>
             <div class="Our_mission">
-            OUR MISSION
             </div>
             </div>
         <img src="images/Astronaut_logout.png" class="astronaut_logout" alt="astro">
@@ -36,7 +34,7 @@
         <input type="text" id="user" name="user" required>  
         <label for="password">Password</label>
         <input type="password" name="password" id="password" required>
-        <input type="submit" value="Login" name="login" id="login"> 
+        <input type="Submit" value="Login" name="login" id="login"> 
         </form>  
         </div>
         <div class="register">
@@ -77,7 +75,7 @@ if (isset($_POST['login'])) {
         header("Location: user_home.php"); 
 
     } else {
-        echo htmlentities("Incorrect Password");
+        echo '<span style="height: 60rem; width: 120rem;">' . htmlentities("Incorrect Password") . '</span>';
         exit; 
     }
 }
